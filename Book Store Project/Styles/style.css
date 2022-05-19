@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    animation: bgChange 60s ease-in-out infinite;
+    background-size: cover;
+}
+
+.container {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+}
+/*
+.register {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+}
+*/
+
+.login, .register {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 50px;
+    border-radius: 25px;
+}
+
+.login img, .register img {
+    margin: auto;
+    width: 100px;
+}
+
+.login h1, .register h1 {
+    text-align: center;
+    font-family: algerian;
+    font-size: 2em;
+    color: azure;
+    background: black;
+}
+
+.login input[type=text], .login input[type=password], .register input[type=text], .register input[type=password] {
+    border: none;
+    font-family: tahoma;
+    font-size: 1.3em;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.login input[type=button], .register input[type=button] {
+    cursor: pointer;
+    padding: 10px;
+    font-family: tahoma;
+    font-size: 1.3em;
+    transition: all 2s ease-in-out;
+}
+
+.login input[type=button]:hover, .register input[type=button]:hover {
+    padding: 20px 10px 20px 10px;
+    background: green;
+    color: azure;
+}
+
+@keyframes bgChange {
+    0% {
+        background-image: url("../Images/bg1.jpg");
+    }
+
+    50% {
+        background-image: url("../Images/bg2.jpg");
+    }
+    100% {
+        background-image: url("../Images/bg3.jpg");
+    }
+}
+

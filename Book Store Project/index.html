@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/style.css" />
+    <link rel="stylesheet" href="Styles/home.css" />
+    <title>Book Store</title>
+</head>
+<body>
+    <div class="container">
+        <form class="register" id="register" name="register" >
+            <img src="Images/logo.jpg" alt="">
+            <h1>Register</h1>
+            <input type="text" placeholder="Fullnames" id="txtFullname" />
+            <input type="text" placeholder="Email" id="txtEmail" />
+            <input type="text" placeholder="Phone" id="txtPhone" />
+            <input type="file" id="imgPhoto" />
+            <input type="password" placeholder="Password" id="txtPwd" />
+            <input type="password" placeholder="Re-type Password" id="txtPwd2" />
+            <input type="button" value="Register" id="btnRegister" onclick="registerUser();" />
+            <input type="button" value="Login" onclick="openLogin();">
+        </form>
+
+        <form class="login" id="login" name="login">
+            <img src="Images/logo.jpg" alt="">
+            <h1>Login</h1>
+            <input type="text" placeholder="Email or Phone" id="txtUid" />
+            <input type="password" placeholder="Password" id="txtPwd3" />
+            <input type="button" value="Login" onclick="loginUser();" />
+            <input type="button" value="Register" onclick="openRegister();" />
+        </form>
+
+        <div class="home" id="home">
+            <header class="userInfo" id="userInfo">
+                
+                
+                
+            </header>
+
+            <div class="searchbar">
+                <form action="" name="searchBar">
+                    <input type="text" name="txtSearch" id="txtSearch" />
+                    <label for="cbxType">Type</label>
+                    <select name="cbxType" id="cbxType">
+                        <option value="title">Title</option>
+                        <option value="author">Author</option>
+                    </select>
+                    <label for="cbxGenre">Genre</label>
+                    <select name="cbxGenre" id="genre">
+                        <option value="all">All</option>
+                        <option value="action">Action</option>
+                        <option value="drama">Drama</option>
+                        <option value="comedy">Comedy</option>
+                        <option value="romance">Romance</option>
+                    </select>
+                    <input type="button" value="Search" onclick="searchByText();" />
+                    <input type="button" value="Search by genre" onclick="searchByGenre();" />
+                </form>
+            </div>
+
+            <div class="bookPanel" id="bookPanel">
+                <div class="bookShelf" id="bookShelf">
+                    
+                </div>
+            </div>
+
+            <footer class="mainFooter">
+                    <p>This application was developed by &reg; Desmond Milani</p>
+                    <p>2022</p>
+            </footer>
+            
+        </div>
+
+        
+    </div>
+
+    <script src="Scripts/script.js"></script>
+</body>
+</html>
